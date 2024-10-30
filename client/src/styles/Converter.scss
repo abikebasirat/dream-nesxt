@@ -1,0 +1,86 @@
+
+.topic{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 20px;
+    /* border: 2px solid #ddd; */
+    /* border-radius: 8px; */
+    /* background-color: #f9f9f9; */
+
+}
+
+.container {
+    
+     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    max-width: 400px;
+    
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-left: 30rem;
+  }
+  
+  .coverter {
+    font-size: 16px;
+    margin-top: 80px;
+    color: #333;
+    gap: 30px;
+
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .output {
+    font-size: 18px; 
+     font-weight: bold; 
+     color: #333; 
+     margin-top: 10px;
+  }
+  
+  .output label {
+     color: #333; 
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 15px;
+      max-width: 100%;
+    }
+  
+    input,
+    select,
+    .btn {
+      width: 100%;
+    }
+  }
+  
