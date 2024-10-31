@@ -44,6 +44,9 @@ function ConverterPage() {
   };
 
   return (
+    <div>
+      <h1>Convert your money here</h1>
+      
     <div className="container">
       <div className="input-amount">
         <label>Amount:</label>
@@ -54,6 +57,7 @@ function ConverterPage() {
           value={amount}
         />
       </div>
+    
 
       <div className="input-from">
         <label>From:</label>
@@ -98,6 +102,7 @@ function ConverterPage() {
       <div className="output">
         <label>Output: {output}</label>
       </div>
+    </div>
     </div>
   );
 }
