@@ -103,6 +103,7 @@ const ListingDetails = () => {
         endDate: dateRange[0].endDate.toDateString(),
         totalPrice: listing.price * dayCount,
       }
+    
 
       const response = await fetch("http://localhost:3001/bookings/create", {
         method: "POST",
@@ -219,9 +220,14 @@ const ListingDetails = () => {
               </div>
 
 
+
+
               {/* <button className="button" type="submit" onClick={handleSubmit}>
                 BOOKING
               </button> */}
+
+
+
             </div>
           </div>
         </div>

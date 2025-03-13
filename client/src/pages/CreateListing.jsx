@@ -11,7 +11,7 @@ import { BiTrash } from "react-icons/bi";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer"
-import MapApi from "../components/MapApi";
+// import MapApi from "../components/MapApi";
 import { Country, State } from "country-state-city";
 
 const CreateListing = () => {
@@ -22,7 +22,7 @@ const CreateListing = () => {
   const [city, setCity] = useState("");
 
   /* LOCATION */
-  <MapApi />
+  // <MapApi />
 
   const [formLocation, setFormLocation] = useState({
     streetAddress: "",

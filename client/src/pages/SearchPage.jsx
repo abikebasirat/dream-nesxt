@@ -7,7 +7,7 @@ import Loader from "../components/Loader"
 import Navbar from "../components/Navbar";
 import ListingCard from "../components/ListingCard";
 import Footer from "../components/Footer"
-import MapApi from "../components/MapApi";
+// import MapApi from "../components/MapApi";
 
 const SearchPage = ({searchResults}) => {
   // const{location, startDate, noOfGuests} = router.query;

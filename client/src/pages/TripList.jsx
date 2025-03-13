@@ -7,7 +7,7 @@ import { setTripList } from "../redux/state";
 import ListingCard from "../components/ListingCard";
 import Footer from "../components/Footer"
 import { useParams } from "react-router-dom";
-import StripeCheckout from "react-stripe-checkout";
+// import StripeCheckout from "react-stripe-checkout";
 import ConverterPage from "../components/ConverterPage";
 
 const TripList = () => {
