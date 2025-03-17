@@ -24,7 +24,7 @@ const LoginPage = () => {
         body: JSON.stringify({ email, password })
       })
 
-      /* Get data after fetching */
+      
       const loggedIn = await response.json()
 
       if (loggedIn) {

@@ -14,12 +14,7 @@ export const userColumns = [
     },
   },
   { field: "email", headerName: "Email", width: 200 },
-  // {
-  //   field: "age",
-  //   headerName: "Age",
-  //   type: "number",
-  //   width: 100,
-  // },
+  
   {
     field: "status",
     headerName: "Status",
@@ -41,7 +36,6 @@ export const userRows = [
     img: "/assets/person/person1.jpg",
     email: "kenny@gmail.com",
     status: "active",
-    // age: 35,
   },
   {
     id: 2,
@@ -49,7 +43,6 @@ export const userRows = [
     img: "/assets/person/person2.jpg",
     email: "basirat@gmail.com",
     status: "passive",
-    // age: 21,
   },
   {
     id: 3,
@@ -57,7 +50,7 @@ export const userRows = [
     img: "/assets/person/person3.jpg",
     email: "abike@gmail.com",
     status: "pending",
-    // age: 15,
+   
   },
   {
     id: 4,
@@ -65,7 +58,7 @@ export const userRows = [
     img: "/assets/person/person4.jpg",
     email: "nafisha@gmail.com",
     status: "active",
-    // age: 26,
+   
   },
   {
     id: 5,
@@ -73,7 +66,7 @@ export const userRows = [
     img: "/assets/person/person5.jpg",
     email: "zainab@gmail.com",
     status: "pending",
-    // age: 28,
+    
   },
   {
     id: 6,
@@ -81,7 +74,7 @@ export const userRows = [
     img: "/assets/person/person6.jpg",
     email: "yusiroh@gmail.com",
     status: "passive",
-    // age: 20,
+    
   },
   {
     id: 7,
@@ -89,7 +82,7 @@ export const userRows = [
     img: "/assets/person/person7.jpg",
     email: "salewa@gmail.com",
     status: "active",
-    // age: 30,
+    
   },
   {
     id: 8,
@@ -97,7 +90,7 @@ export const userRows = [
     img: "/assets/person/person8.jpg",
     email: "alaba@gmail.com",
     status: "passive",
-    // age: 27,
+    
   },
   {
     id: 9,
@@ -105,7 +98,7 @@ export const userRows = [
     img: "/assets/person/person1.jpg",
     email: "ikimo@gmail.com",
     status: "active",
-    // age: 35,
+   
   },
   {
     id: 10,
@@ -113,7 +106,7 @@ export const userRows = [
     img: "/assets/person/person2.jpg",
     email: "barakah@gmail.com",
     status: "passive",
-    // age: 21,
+    
   },
   {
     id: 11,
@@ -121,7 +114,7 @@ export const userRows = [
     img: "/assets/person/person3.jpg",
     email: "kaosarah@gmail.com",
     status: "pending",
-    // age: 15,
+   
   },
   {
     id: 12,
@@ -129,7 +122,7 @@ export const userRows = [
     img: "/assets/person/person4.jpg",
     email: "nike@gmail.com",
     status: "active",
-    // age: 26,
+    
   },
   {
     id: 13,
@@ -137,7 +130,7 @@ export const userRows = [
     img: "/assets/person/person5.jpg",
     email: "lolade@gmail.com",
     status: "pending",
-    // age: 28,
+    
   },
   {
     id: 14,
@@ -145,7 +138,7 @@ export const userRows = [
     img: "/assets/person/person6.jpg",
     email: "jumoke@gmail.com",
     status: "passive",
-    // age: 20,
+   
   },
   {
     id: 15,
@@ -153,7 +146,7 @@ export const userRows = [
     img: "/assets/person/person7.jpg",
     email: "yatunde@gmail.com",
     status: "active",
-    // age: 30,
+    
   },
   {
     id: 16,
@@ -161,7 +154,7 @@ export const userRows = [
     img: "/assets/person/person8.jpg",
     email: "sebastian@gmail.com",
     status: "passive",
-    // age: 27,
+    
   },
   {
     id: 16,
@@ -169,7 +162,7 @@ export const userRows = [
     img: "/assets/person/person8.jpg",
     email: "idowu@gmail.com",
     status: "passive",
-    // age: 27,
+    
   },
   {
     id: 17,
@@ -177,6 +170,6 @@ export const userRows = [
     img: "/assets/person/person8.jpg",
     email: "anike@gmail.com",
     status: "passive",
-    // age: 27,
+    
   },
 ];

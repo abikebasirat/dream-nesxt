@@ -7,7 +7,7 @@ import { setTripList } from "../redux/state";
 import ListingCard from "../components/ListingCard";
 import Footer from "../components/Footer"
 import { useParams } from "react-router-dom";
-// import StripeCheckout from "react-stripe-checkout";
+
 import ConverterPage from "../components/ConverterPage";
 
 const TripList = () => {
@@ -70,15 +70,7 @@ const TripList = () => {
           />
         ))}
       </div>
-      {/* <div style ={{textAlign: 'center', marginTop: '15rem'}} onClick={handleSubmit}>
-       <StripeCheckout 
-        amount={listing?.price * 100}
-        token={onToken}
-        
-        currency='USD'
-        stripeKey="pk_test_51PsppnISCf6RR6ChEPMTT0M0DTfRdPYTUuuqNJw7GYNv7g6QDFBwtQgp8w5HHuoAg1mFqNqovsGEbjPKKydM877000c9bmuuEz"
-          ></StripeCheckout> 
-     </div>  */}
+     
      <ConverterPage/>
       
       <Footer />

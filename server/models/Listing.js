@@ -24,7 +24,6 @@ const ListingSchema = new mongoose.Schema(
     },
     city: {
       type: String,
-      // required: true,
     },
     province: {
       type: String,
@@ -32,7 +31,6 @@ const ListingSchema = new mongoose.Schema(
     },
     country: {
       type: String,
-      // required: true,
     },
     guestCount: {
       type: Number,
@@ -54,7 +52,7 @@ const ListingSchema = new mongoose.Schema(
       type: Array,
       default:[]
     },
-    listingPhotoPaths: [{ type: String }], // Store photo URLs
+    listingPhotoPaths: [{ type: String }], 
     title: {
       type: String,
       required: true

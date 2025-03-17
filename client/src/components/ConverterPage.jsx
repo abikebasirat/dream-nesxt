@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from 'react'
 import { TbArrowsExchange } from "react-icons/tb";
-// import "../styles/converter.scss"
+
 import "../styles/Converter.scss"
-// import CurrencySelect from './CurrencySelect';
+
 
 
 
@@ -16,14 +16,14 @@ function ConverterPage() {
   const [output, setOutput] = useState();
 
   const getRates = async () => {
-    // fetch the data from API
+   
     const API_KEY = process.env.REACT_APP_CONVERTER_KEY 
     
     const response = await fetch(
      `https://v6.exchangerate-api.com/v6/2f478d4d368a9bfa73f2e0e4/latest/${fromCurrency}`
     ).then((response) => response.json());
 
-    // save the rates in the state
+   
     if (response.result === "success") {
       setRates(response.conversion_rates);
       setRatesFetched(true);
@@ -35,7 +35,7 @@ function ConverterPage() {
   }, []);
 
   const calculateOutput = async () => {
-    // fetch the selected from currency rates
+   
     const response = await fetch(
      `https://v6.exchangerate-api.com/v6/2f478d4d368a9bfa73f2e0e4/latest/USD`
     ).then((response) => response.json());

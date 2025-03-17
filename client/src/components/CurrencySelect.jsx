@@ -1,6 +1,6 @@
 import React from 'react'
 
-// Array of currency code
+
 
 const CurrencyCodes = [
   "AED", "AFN", "ALL", "AMD", "ANG", "AOA", "ARS", "AUD", "AWG", "AZN",

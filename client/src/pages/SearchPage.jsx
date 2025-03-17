@@ -7,14 +7,14 @@ import Loader from "../components/Loader"
 import Navbar from "../components/Navbar";
 import ListingCard from "../components/ListingCard";
 import Footer from "../components/Footer"
-// import MapApi from "../components/MapApi";
+
 
 const SearchPage = ({searchResults}) => {
-  // const{location, startDate, noOfGuests} = router.query;
+  
   const [loading, setLoading] = useState(true)
   const { search } = useParams()
   const listings = useSelector((state) => state.listings)
-  // const {props.searchResults = getServerSideProps()
+  
   const dispatch = useDispatch()
 
   const getSearchListings = async () => {
@@ -69,9 +69,7 @@ const SearchPage = ({searchResults}) => {
           )
         )}
       </div>
-      {/* <section style={{mixWidth: '50px', maxHeight: '50px'}}>
-        <MapApi searchResults={searchResults} />
-      </section> */}
+      
       <Footer />
     </>
   );

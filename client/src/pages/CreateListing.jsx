@@ -11,7 +11,7 @@ import { BiTrash } from "react-icons/bi";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer"
-// import MapApi from "../components/MapApi";
+
 import { Country, State } from "country-state-city";
 
 const CreateListing = () => {
@@ -21,8 +21,7 @@ const CreateListing = () => {
   const [country, setCountry] = useState("");
   const [city, setCity] = useState("");
 
-  /* LOCATION */
-  // <MapApi />
+
 
   const [formLocation, setFormLocation] = useState({
     streetAddress: "",
@@ -41,7 +40,7 @@ const CreateListing = () => {
     });
   };
 
-  /* BASIC COUNTS */
+
   const [guestCount, setGuestCount] = useState(1);
   const [bedroomCount, setBedroomCount] = useState(1);
   const [bedCount, setBedCount] = useState(1);
@@ -49,7 +48,7 @@ const CreateListing = () => {
 
 
 
-  /* AMENITIES */
+ 
   const [amenities, setAmenities] = useState([]);
 
   const handleSelectAmenities = (facility) => {
@@ -62,7 +61,7 @@ const CreateListing = () => {
     }
   };
 
-  /* UPLOAD, DRAG & DROP, REMOVE PHOTOS */
+ 
   const [photos, setPhotos] = useState([]);
 
   const handleUploadPhotos = (e) => {
@@ -86,7 +85,7 @@ const CreateListing = () => {
     );
   };
 
-  /* DESCRIPTION */
+ 
   const [formDescription, setFormDescription] = useState({
     title: "",
     description: "",
@@ -111,7 +110,7 @@ const CreateListing = () => {
     e.preventDefault();
 
     try {
-      /* Create a new FormData onject to handle file uploads */
+     
       const listingForm = new FormData();
       listingForm.append("creator", creatorId);
       listingForm.append("category", category);
@@ -132,12 +131,13 @@ const CreateListing = () => {
       listingForm.append("highlightDesc", formDescription.highlightDesc);
       listingForm.append("price", formDescription.price);
 
-      /* Append each selected photos to the FormData object */
+      
       photos.forEach((photo) => {
         listingForm.append("listingPhotos", photo);
       });
 
-      /* Send a POST request to server */
+      
+      
       const response = await fetch("http://localhost:3001/properties/create", {
         method: "POST",
         body: listingForm,
@@ -219,17 +219,7 @@ const CreateListing = () => {
                   required
                 />
               </div>
-              {/* <div className="location">
-                <p>City</p>
-                <input
-                  type="text"
-                  placeholder="City"
-                  name="city"
-                  value={formLocation.city}
-                  onChange={handleChangeLocation}
-                  required
-                />
-              </div> */}
+             
 
 
 
@@ -253,7 +243,7 @@ const CreateListing = () => {
                   </select>
                 </div>
 
-                {/* CITY IMPLEMENTATION */}
+               
                 <div className="city-class">
                   <label className="location">City</label>
                   <select
@@ -289,17 +279,7 @@ const CreateListing = () => {
                   required
                 />
               </div>
-              {/* <div className="location">
-                <p>Country</p>
-                <input
-                  type="text"
-                  placeholder="Country"
-                  name="country"
-                  value={formLocation.country}
-                  onChange={handleChangeLocation}
-                  required
-                />
-              </div> */}
+             
             </div>
 
             <h3>Share some basics about your place</h3>

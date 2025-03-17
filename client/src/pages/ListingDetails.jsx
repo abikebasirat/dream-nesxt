@@ -70,7 +70,7 @@ const ListingDetails = () => {
   console.log(listing)
 
 
-  /* BOOKING CALENDAR */
+ 
   const [dateRange, setDateRange] = useState([
     {
       startDate: new Date(),
@@ -80,15 +80,15 @@ const ListingDetails = () => {
   ]);
 
   const handleSelect = (ranges) => {
-    // Update the selected date range when user makes a selection
+    
     setDateRange([ranges.selection]);
   };
 
   const start = new Date(dateRange[0].startDate);
   const end = new Date(dateRange[0].endDate);
-  const dayCount = Math.round(end - start) / (1000 * 60 * 60 * 24); // Calculate the difference in day unit
+  const dayCount = Math.round(end - start) / (1000 * 60 * 60 * 24); 
 
-  /* SUBMIT BOOKING */
+
   const customerId = useSelector((state) => state?.user?._id)
 
   const navigate = useNavigate()
@@ -219,27 +219,10 @@ const ListingDetails = () => {
                 ></StripeCheckout>
               </div>
 
-
-
-
-              {/* <button className="button" type="submit" onClick={handleSubmit}>
-                BOOKING
-              </button> */}
-
-
-
             </div>
           </div>
         </div>
-        {/* <div style={{ textAlign: 'center', marginTop: '15rem' }} onClick={handleSubmit}>
-          <StripeCheckout
-            amount={listing?.price * 100}
-            token={onToken}
-
-            currency='USD'
-            stripeKey="pk_test_51PsppnISCf6RR6ChEPMTT0M0DTfRdPYTUuuqNJw7GYNv7g6QDFBwtQgp8w5HHuoAg1mFqNqovsGEbjPKKydM877000c9bmuuEz"
-          ></StripeCheckout>
-        </div> */}
+        
       </div>
 
       <Footer />

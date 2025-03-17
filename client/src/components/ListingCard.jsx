@@ -24,7 +24,7 @@ const ListingCard = ({
   totalPrice,
   booking,
 }) => {
-  /* SLIDER FOR IMAGES */
+ 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevSlide = () => {
@@ -41,7 +41,7 @@ const ListingCard = ({
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  /* ADD TO WISHLIST */
+  
   const user = useSelector((state) => state.user);
   const wishList = user?.wishList || [];
 
