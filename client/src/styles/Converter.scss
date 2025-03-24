@@ -1,91 +1,119 @@
 
-.topic{
-    max-width: 400px;
-    margin: 0 auto;
-    margin-top: 60px;
-    padding: 20px;
-  
+  // Variables
+$primary-color: #4CAF50;
+$primary-hover: #45a049;
+$border-color: #ddd;
+$input-border: #ccc;
+$background: #f9f9f9;
+$text-color: #333;
+$container-width: 400px;
 
+// Mixins
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin input-styles {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid $input-border;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+  }
+}
+
+// Styles
+.topic {
+  max-width: $container-width;
+  margin: 60px auto 0;
+  padding: 20px;
 }
 
 .container {
-    
-     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start; 
-    max-width: 400px;
-    
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    margin-left: 27rem;
-  }
-  
-  .coverter {
-    font-size: 16px;
-    margin-top: 80px;
-    color: #333;
-    gap: 30px;
+  @include flex-column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: $container-width;
+  margin: 0 0 30px 27rem;
+  padding: 20px;
+  border: 2px solid $border-color;
+  border-radius: 8px;
+  background-color: $background;
 
+  @media (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
   }
-  h1{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+}
+
+.converter {
+  @include flex-column;
+  gap: 30px;
+  font-size: 16px;
+  margin-top: 80px;
+  color: $text-color;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+input, select {
+  @include input-styles;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+}
+
+.output {
+  font-size: 18px;
+  font-weight: bold;
+  color: $text-color;
+  margin-top: 10px;
+
+  label {
+    color: $text-color;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
   }
   
-  input,
-  select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
+  .converter {
+    margin-top: 40px;
+    gap: 20px;
   }
-  
-  .btn {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
-  .output {
-    font-size: 18px; 
-     font-weight: bold; 
-     color: #333; 
-     margin-top: 10px;
-  }
-  
-  .output label {
-     color: #333; 
-  }
-  
-  @media (max-width: 600px) {
-    .container {
-      padding: 15px;
-      max-width: 100%;
-    }
-  
-    input,
-    select,
-    .btn {
-      width: 100%;
-    }
-  }
+}
 
 
   
