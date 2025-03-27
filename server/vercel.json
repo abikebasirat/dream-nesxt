@@ -2,37 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "api/**/*.js",
+        "src": "index.js", 
         "use": "@vercel/node"
-      },
-      {
-        "src": "frontend/package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "frontend/build"
-        }
       }
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
-        "dest": "/api/$1"
-      },
-      {
         "src": "/(.*)",
-        "dest": "/frontend/$1"
-      }
-    ],
-    "env": {
-      "REACT_APP_API_URL": "https://:localhost/3001",
-      "NODE_ENV": "production",
-      "CUSTOM_API_KEY": "@custom-api-key"
-    },
-    "functions": {
-      "api/**/*.js": {
-        "memory": 512,
-        "maxDuration": 10
-      }
-    }
-  }
-  
+        "dest": "index.js"
+ }
+]
+}
