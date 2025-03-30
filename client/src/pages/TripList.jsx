@@ -29,7 +29,7 @@ const TripList = () => {
     
     try {
       const response = await fetch(
-        `http://localhost:3001/users/${userId}/trips`,
+       `https://dream-nesxt.vercel.app/`,
         {
           method: "GET",
         }

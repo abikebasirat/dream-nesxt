@@ -31,7 +31,8 @@ const StripePage = () => {
   const getListingDetails = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3001/properties/${listingId}`,
+        // `http://localhost:3001/properties/${listingId}`,
+        `https://dream-nesxt.vercel.app/`,
         {
           method: "GET",
         }
@@ -63,7 +64,7 @@ const StripePage = () => {
         token
       }
 
-      const response = await fetch("http://localhost:3001/bookings/create", {
+      const response = await fetch(`https://dream-nesxt.vercel.app/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

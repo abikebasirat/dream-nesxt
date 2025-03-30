@@ -138,7 +138,8 @@ const CreateListing = () => {
 
       
       
-      const response = await fetch("http://localhost:3001/properties/create", {
+      const response = await fetch(
+       `https://dream-nesxt.vercel.app/`, {
         method: "POST",
         body: listingForm,
       });

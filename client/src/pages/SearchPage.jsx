@@ -19,7 +19,7 @@ const SearchPage = ({searchResults}) => {
 
   const getSearchListings = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/properties/search/${search}`, {
+      const response = await fetch(`https://dream-nesxt.vercel.app/`, {
         method: "GET"
       })
 
@@ -78,7 +78,7 @@ const SearchPage = ({searchResults}) => {
 export default SearchPage;
 
 export async function getServerSideProps(){
-  const searchResults = await fetch("https://links.papareact.com/isz")
+  const searchResults = await fetch(`https://dream-nesxt.vercel.app/`)
   .then(
     (res) => res.json()
   );
