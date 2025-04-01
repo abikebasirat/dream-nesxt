@@ -10,7 +10,7 @@ const listingRoutes = require("./controller/listing.js")
 const bookingRoutes = require("./controller/booking.js")
 const userRoutes = require("./controller/user.js")
 
-app.use(cors());
+app.use(cors({}));
 app.use(express.json());
 app.use(express.static("public"));
 
