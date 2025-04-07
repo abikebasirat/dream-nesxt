@@ -20,9 +20,9 @@ function ConverterPage() {
     const API_KEY = process.env.REACT_APP_CONVERTER_KEY 
     
     const response = await fetch(
-    //  `https://v6.exchangerate-api.com/v6/2f478d4d368a9bfa73f2e0e4/latest/${fromCurrency}`
+     `https://v6.exchangerate-api.com/v6/2f478d4d368a9bfa73f2e0e4/latest/${fromCurrency}`
 
-    `https://dream-nesxt.vercel.app/`
+    // `https://dream-nesxt.vercel.app/`
     ).then((response) => response.json());
 
    
@@ -39,9 +39,9 @@ function ConverterPage() {
   const calculateOutput = async () => {
    
     const response = await fetch(
-    //  `https://v6.exchangerate-api.com/v6/2f478d4d368a9bfa73f2e0e4/latest/USD`
+     `https://v6.exchangerate-api.com/v6/2f478d4d368a9bfa73f2e0e4/latest/USD`
 
-    `https://dream-nesxt.vercel.app/`
+    // `https://dream-nesxt.vercel.app/`
     ).then((response) => response.json());
     const fetchedRates = response.conversion_rates;
     const CurrencyRate = fetchedRates[toCurrency];
